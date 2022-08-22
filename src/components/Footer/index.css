@@ -1,0 +1,22 @@
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-item {
+  padding: 8px 0;
+  display: block;
+  font-size: 28px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.anchor-icon:hover {
+  color: #ffd700;
+}
