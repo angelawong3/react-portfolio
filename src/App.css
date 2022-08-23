@@ -1,4 +1,110 @@
-input,
-textarea {
+/* css for all section */
+* {
   font-family: "Helvetica Neue";
 }
+
+/* start of header css */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  background-color: #ffba08;
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  margin: 30px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.home-icon:hover::after {
+  content: "HOME";
+}
+
+.about-icon:hover::after {
+  content: "ABOUT";
+}
+
+.project-icon:hover::after {
+  content: "PROJECT";
+}
+
+.contact-icon:hover::after {
+  content: "CONTACT";
+}
+/* end of navbar css */
+
+/* start of home page css */
+#home-page {
+  padding-top: 200px;
+  width: 100%;
+  height: 100%;
+}
+/* end of home page css */
+
+/* start of about section css */
+#about {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 50px;
+  background-color: rgba(0, 76, 76, 0.2);
+}
+
+#my-pic {
+  width: 80px;
+  height: 80px;
+}
+/* end of about section css */
+
+/* start of project section css */
+.project {
+  width: 380px;
+  opacity: 0.8;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+/* end of project section css */
+
+/* start of footer css */
+.footer {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-item {
+  display: inline-block;
+  font-size: 28px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.anchor-icon:hover {
+  color: #ffd700;
+}
+/* end of footer css */

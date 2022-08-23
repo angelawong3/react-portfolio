@@ -1,4 +1,4 @@
-.nav-bar {
+/* .nav-bar {
   display: flex;
   justify-content: space-around;
   padding: 0;
@@ -40,4 +40,4 @@ a:hover {
 
 .contact-icon:hover::after {
   content: "CONTACT";
-}
+} */
