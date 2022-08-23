@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -7,6 +6,7 @@ import {
   faBook,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+
 const Navigation = () => (
   <div>
     <nav className="nav-bar">
