@@ -4,7 +4,7 @@ import mypic from "../../assets/img/mypic.jpg";
 export default class About extends Component {
   render() {
     return (
-      <section id="about">
+      <section id="section">
         <div>
           <div id="title">ABOUT ME</div>
           <div className="container">

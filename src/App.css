@@ -8,6 +8,16 @@
   letter-spacing: 5px;
 }
 
+#section {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 50px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+/* end of css for all section */
+
 /* start of header css */
 .nav-bar {
   display: flex;
@@ -60,14 +70,7 @@ a:hover {
 /* end of navbar css */
 
 /* start of about section css */
-#about {
-  padding-top: 100px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 50px;
-  background-color: rgba(0, 76, 76, 0.2);
-}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -104,6 +107,10 @@ a:hover {
   padding-right: 20px;
   margin: 0 50px;
   background-color: rgba(0, 76, 76, 0.2);
+}
+
+span {
+  color: #fff;
 }
 /* end of resume section css */
 
