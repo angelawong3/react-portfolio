@@ -1,6 +1,7 @@
-import "./index.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import React from "react";
+import "./index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => (
   <div>
@@ -33,6 +34,6 @@ const Footer = () => (
       </li>
     </ul>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

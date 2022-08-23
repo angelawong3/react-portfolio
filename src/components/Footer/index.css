@@ -10,8 +10,7 @@
 }
 
 .footer-item {
-  padding: 8px 0;
-  display: block;
+  display: inline-block;
   font-size: 28px;
   line-height: 15px;
   color: #fff;
