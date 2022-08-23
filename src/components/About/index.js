@@ -6,11 +6,13 @@ export default class About extends Component {
     return (
       <section id="about">
         <div>
-          <div>
-            <div id="about-me">ABOUT ME</div>
-            <div>
-              <h2 className="card-title">Hello! I am Angela.</h2>
+          <div id="title">ABOUT ME</div>
+          <div className="container">
+            <div className="flex-item">
               <img id="my-pic" src={mypic} alt="my profile picture" />
+            </div>
+            <div className="flex-item">
+              <h3>Hello! I am Angela.</h3>
               <p>
                 An organised, creative, and reliable full-stack web developer
                 with skills in HTML, CSS, and JavaScript. Find doing web
@@ -26,15 +28,6 @@ export default class About extends Component {
                 pressure. Happy to work as a team as combined skills make one
                 awesome whole.
               </p>
-            </div>
-            <div className="card-footer text-muted">
-              <a
-                href="./assets/document/angela-wong-cv.pdf"
-                className="btn btn-cv"
-                target="_blank"
-              >
-                Click to download my CV
-              </a>
             </div>
           </div>
         </div>

@@ -3,6 +3,11 @@
   font-family: "Helvetica Neue";
 }
 
+#title {
+  color: #fff;
+  letter-spacing: 5px;
+}
+
 /* start of header css */
 .nav-bar {
   display: flex;
@@ -63,10 +68,19 @@ a:hover {
   margin: 0 50px;
   background-color: rgba(0, 76, 76, 0.2);
 }
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  margin: 20px;
+}
 
 #my-pic {
-  width: 80px;
-  height: 80px;
+  margin-top: 20px;
+  width: 180px;
+  height: 180px;
 }
 /* end of about section css */
 
