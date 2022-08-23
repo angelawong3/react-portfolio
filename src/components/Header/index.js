@@ -1,8 +1,13 @@
+import React, { Component } from "react";
 import "./index.css";
 import Navigation from "../Navigation";
 
-const Header = () => {
-  return <Navigation />;
-};
-
-export default Header;
+export default class Header extends Component {
+  render() {
+    return (
+      <header className="App">
+        <Navigation />
+      </header>
+    );
+  }
+}
