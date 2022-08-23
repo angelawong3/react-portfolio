@@ -5,6 +5,7 @@ import "./App.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/Header";
+import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
 import Resume from "./components/Resume";
@@ -18,7 +19,7 @@ class App extends Component {
         <Header />
         <Wrapper>
           <Routes>
-            <Route path="/" element={<About />} />
+            <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Project" element={<Project />} />
             <Route path="/Resume" element={<Resume />} />

@@ -12,11 +12,11 @@ export default class About extends Component {
               <img id="my-pic" src={mypic} alt="my profile picture" />
             </div>
             <div className="flex-item">
-              <h3>Hello! I am Angela.</h3>
+              <h3>Hello!</h3>
               <p>
-                An organised, creative, and reliable full-stack web developer
-                with skills in HTML, CSS, and JavaScript. Find doing web
-                development challenging yet satisfying. Feel a sense of
+                I am an organised, creative, and reliable full-stack web
+                developer with skills in HTML, CSS, and JavaScript. I find doing
+                web development challenging yet satisfying. Feel a sense of
                 accomplishment while doing so.
               </p>
               <p>
