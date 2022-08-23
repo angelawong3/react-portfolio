@@ -16,12 +16,28 @@ li {
 
 a {
   text-decoration: none;
-  padding-left: 50px;
+  margin: 30px;
   color: #000;
   letter-spacing: 1px;
 }
 
 a:hover {
-  text-transform: uppercase;
   color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.home-icon:hover::after {
+  content: "HOME";
+}
+
+.about-icon:hover::after {
+  content: "ABOUT";
+}
+
+.project-icon:hover::after {
+  content: "PROJECT";
+}
+
+.contact-icon:hover::after {
+  content: "CONTACT";
 }

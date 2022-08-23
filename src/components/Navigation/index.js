@@ -11,43 +11,23 @@ const Navigation = () => (
     <nav className="nav-bar">
       <ul>
         <li>
-          <a href="/">
-            <FontAwesomeIcon
-              icon={faHome}
-              color="#000"
-              className="hover-icon"
-            />
-            &nbsp; Home
+          <a className="home-icon" href="/">
+            <FontAwesomeIcon icon={faHome} color="#000" />
           </a>
         </li>
         <li>
-          <a href="/about">
-            <FontAwesomeIcon
-              icon={faUser}
-              color="#fff"
-              className="hover-icon"
-            />
-            &nbsp; About
+          <a className="about-icon" href="/about">
+            <FontAwesomeIcon icon={faUser} color="#fff" />
           </a>
         </li>
         <li>
-          <a href="/project">
-            <FontAwesomeIcon
-              icon={faBook}
-              color="#fff"
-              className="hover-icon"
-            />
-            &nbsp; Project
+          <a className="project-icon" href="/project">
+            <FontAwesomeIcon icon={faBook} color="#fff" />
           </a>
         </li>
         <li>
-          <a href="/contact">
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              color="#fff"
-              className="hover-icon"
-            />
-            &nbsp; Contact
+          <a className="contact-icon" href="/contact">
+            <FontAwesomeIcon icon={faEnvelope} color="#fff" />
           </a>
         </li>
       </ul>
