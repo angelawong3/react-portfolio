@@ -85,6 +85,17 @@ a:hover {
 }
 /* end of project section css */
 
+/* start of contact section css */
+#contact {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 50px;
+  background-color: rgba(0, 76, 76, 0.2);
+}
+/* end of contact section css */
+
 /* start of footer css */
 .footer {
   position: relative;

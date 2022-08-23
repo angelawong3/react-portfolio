@@ -1,7 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Contact = () => {
-  return <div>This is contact</div>;
-};
-
-export default Contact;
+export default class Contact extends Component {
+  render() {
+    return (
+      <section id="contact">
+        <h2>This is contact</h2>
+      </section>
+    );
+  }
+}
