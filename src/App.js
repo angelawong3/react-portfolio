@@ -7,6 +7,7 @@ import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import Project from "./components/Project";
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/" element={<About />} />
             <Route path="/About" element={<About />} />
             <Route path="/Project" element={<Project />} />
+            <Route path="/Resume" element={<Resume />} />
             <Route path="/Contact" element={<Contact />} />
           </Routes>
         </Wrapper>

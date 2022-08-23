@@ -4,6 +4,7 @@ import {
   faHome,
   faUser,
   faBook,
+  faNewspaper,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,6 +25,11 @@ const Navigation = () => (
         <li>
           <a className="project-icon" href="/project">
             <FontAwesomeIcon icon={faBook} color="#fff" />
+          </a>
+        </li>
+        <li>
+          <a className="resume-icon" href="/resume">
+            <FontAwesomeIcon icon={faNewspaper} color="#fff" />
           </a>
         </li>
         <li>

@@ -6,11 +6,12 @@
 /* start of header css */
 .nav-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
   width: 100%;
   height: 60px;
   position: absolute;
+  align-items: center;
   background-color: #ffba08;
   font-size: 20px;
 }
@@ -22,7 +23,7 @@ li {
 
 a {
   text-decoration: none;
-  margin: 30px;
+  margin: 18px;
   color: #000;
   letter-spacing: 1px;
 }
@@ -44,18 +45,14 @@ a:hover {
   content: "PROJECT";
 }
 
+.resume-icon:hover::after {
+  content: "RESUME";
+}
+
 .contact-icon:hover::after {
   content: "CONTACT";
 }
 /* end of navbar css */
-
-/* start of home page css */
-#home-page {
-  padding-top: 200px;
-  width: 100%;
-  height: 100%;
-}
-/* end of home page css */
 
 /* start of about section css */
 #about {
@@ -84,6 +81,17 @@ a:hover {
   opacity: 1;
 }
 /* end of project section css */
+
+/* start of resume section css */
+#resume {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 50px;
+  background-color: rgba(0, 76, 76, 0.2);
+}
+/* end of resume section css */
 
 /* start of contact section css */
 #contact {
