@@ -5,6 +5,8 @@ export default class Resume extends Component {
     return (
       <section id="section">
         <div id="title">MY RESUME</div>
+        {/* TODO: link to a downloadable resume and a list of the developer’s proficiencies */}
+
         <div className="card-footer text-muted">
           <a
             href="./assets/document/angela-wong-cv.pdf"
