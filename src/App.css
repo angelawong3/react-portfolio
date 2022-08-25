@@ -26,6 +26,10 @@
 .flex-item {
   margin: 20px;
 }
+
+.link-active {
+  color: #fff;
+}
 /* end of css for all section */
 
 /* start of header css */
