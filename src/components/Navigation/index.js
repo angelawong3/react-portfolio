@@ -10,8 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => (
-  <div>
-    <nav className="nav-bar">
+  <div className="nav-bar">
+    <nav>
       <ul>
         <li>
           <NavLink
