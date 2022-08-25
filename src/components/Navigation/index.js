@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -13,34 +14,34 @@ const Navigation = () => (
     <nav className="nav-bar">
       <ul>
         <li>
-          <a className="home-icon" href="/">
+          <Link to="/" className="home-icon">
             <FontAwesomeIcon icon={faHome} color="#000" />
             &nbsp;
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="about-icon" href="/about">
+          <Link to="/About" className="about-icon">
             <FontAwesomeIcon icon={faUser} color="#fff" />
             &nbsp;
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="project-icon" href="/project">
+          <Link to="/Project" className="project-icon">
             <FontAwesomeIcon icon={faBook} color="#fff" />
             &nbsp;
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="resume-icon" href="/resume">
+          <Link to="/Resume" className="resume-icon">
             <FontAwesomeIcon icon={faNewspaper} color="#fff" />
             &nbsp;
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="contact-icon" href="/contact">
+          <Link to="/Contact" className="contact-icon">
             <FontAwesomeIcon icon={faEnvelope} color="#fff" />
             &nbsp;
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
