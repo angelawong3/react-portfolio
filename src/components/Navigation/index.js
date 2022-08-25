@@ -13,7 +13,7 @@ const Navigation = () => (
   <div className="nav-bar">
     <nav>
       <ul>
-        <li>
+        {/* <li>
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -23,7 +23,7 @@ const Navigation = () => (
             <FontAwesomeIcon icon={faHome} />
             &nbsp;
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/About"
