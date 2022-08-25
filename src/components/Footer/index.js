@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default class Contact extends Component {
   render() {
@@ -28,6 +32,19 @@ export default class Contact extends Component {
             >
               <FontAwesomeIcon
                 icon={faGithub}
+                color="#f1f2f6"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+          <li className="footer-item">
+            <a
+              href="http://twitter.com/aaangelaww"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faTwitter}
                 color="#f1f2f6"
                 className="anchor-icon"
               />

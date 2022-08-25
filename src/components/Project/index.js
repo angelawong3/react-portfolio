@@ -4,6 +4,8 @@ import mvp from "../../assets/img/work-pj-mvp.png";
 export default class Project extends Component {
   render() {
     return (
+      // TODO: 6 apps with deployed links & GitHub
+
       <section id="section">
         <div class="col-md-12 p-2">
           <div class="card text-center">
@@ -14,7 +16,11 @@ export default class Project extends Component {
               </h5>
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                  <a href="https://mvp-pet-app.herokuapp.com/" target="_blank">
+                  <a
+                    href="https://mvp-pet-app.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       class="project"
                       src={mvp}
@@ -39,6 +45,7 @@ export default class Project extends Component {
                     href="https://github.com/angelawong3/pet-tracker"
                     class="btn btn-repo2"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Link to the GitHub repository
                   </a>
