@@ -24,7 +24,7 @@ const Navigation = () => (
             &nbsp;
           </NavLink>
         </li> */}
-        <li>
+        <li className="nav-list">
           <NavLink
             to="/About"
             className={({ isActive }) =>
@@ -35,7 +35,7 @@ const Navigation = () => (
             &nbsp;
           </NavLink>
         </li>
-        <li>
+        <li className="nav-list">
           <NavLink
             to="/Project"
             className={({ isActive }) =>
@@ -46,7 +46,7 @@ const Navigation = () => (
             &nbsp;
           </NavLink>
         </li>
-        <li>
+        <li className="nav-list">
           <NavLink
             to="/Resume"
             className={({ isActive }) =>
@@ -57,7 +57,7 @@ const Navigation = () => (
             &nbsp;
           </NavLink>
         </li>
-        <li>
+        <li className="nav-list">
           <NavLink
             to="/Contact"
             className={({ isActive }) =>
