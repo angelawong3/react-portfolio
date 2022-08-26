@@ -179,15 +179,54 @@ h2 {
 /* end of about section css */
 
 /* start of project section css */
-.project {
-  width: 380px;
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  position: relative;
+  width: 350px;
+  margin: 30px;
+}
+
+.project-name {
+  font-size: 16px;
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
   opacity: 0.8;
 }
 
-.project:hover {
+.project-img:hover {
   transform: scale(1.1);
   opacity: 1;
+  animation: fadeout 0.5s ease;
 }
+
+.project-p {
+  height: 150px;
+}
+
+.github-link {
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 450;
+}
+
+.btn:hover {
+  color: #ffba08;
+}
+
 /* end of project section css */
 
 /* start of resume section css */

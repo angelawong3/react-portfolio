@@ -9,7 +9,7 @@ export default class About extends Component {
           <div id="title">ABOUT ME</div>
           <div className="container">
             <div className="flex-item">
-              <img id="my-pic" src={mypic} alt="my profile picture" />
+              <img id="my-pic" src={mypic} alt="my icon" />
             </div>
             <div className="flex-item">
               <h3>Hello!</h3>
