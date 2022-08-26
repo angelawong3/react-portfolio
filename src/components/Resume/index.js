@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import cv from "../../assets/document/angela-wong-cv.pdf";
 
 export default class Resume extends Component {
   render() {
@@ -6,11 +7,7 @@ export default class Resume extends Component {
       <section id="section">
         <div id="title">MY RESUME</div>
         <div className="resume">
-          <a
-            href="./assets/document/angela-wong-cv.pdf"
-            className="btn btn-cv"
-            target="_blank"
-          >
+          <a href={cv} className="btn btn-cv" target="_blank" rel="noreferrer">
             <span>Click to download my CV</span>
           </a>
         </div>
