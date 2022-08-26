@@ -255,11 +255,37 @@ span {
   flex-wrap: wrap;
   padding-left: 0;
 }
-
 /* end of resume section css */
 
 /* start of contact section css */
+form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
+.label {
+  width: 30px;
+  padding: 10px;
+}
+
+input {
+  height: 25px;
+}
+
+.input-email {
+  width: 600px;
+}
+
+.input-message {
+  width: 600px;
+  height: 150px;
+}
+
+.btn-form {
+  margin-left: 10px;
+  width: 100px;
+}
 /* end of contact section css */
 
 /* start of footer css */
@@ -291,5 +317,10 @@ span {
   .container,
   .skill-list ul {
     flex-direction: column;
+  }
+
+  .input-email,
+  .input-message {
+    width: 300px;
   }
 }
