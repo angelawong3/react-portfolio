@@ -5,16 +5,16 @@ const Contact = () => {
   const [Error, setError] = useState("");
 
   const validEmail = (e) => {
+    setError("");
     let email = e.target.value;
 
-    if (validator.isEmail(email)) {
-      setError("");
-    } else {
+    if (!validator.isEmail(email)) {
       setError("Please enter a valid Email");
     }
   };
 
   const requiredName = (e) => {
+    setError("");
     let name = e.target.value;
 
     if (!name) {
@@ -23,6 +23,7 @@ const Contact = () => {
   };
 
   const requiredMessage = (e) => {
+    setError("");
     let message = e.target.value;
 
     if (!message) {
@@ -41,6 +42,7 @@ const Contact = () => {
             type="text"
             name="name"
             onChange={(e) => requiredName(e)}
+            onBlur={(e) => requiredName(e)}
           />
         </label>
         <label className="label">
@@ -50,6 +52,7 @@ const Contact = () => {
             type="text"
             name="email"
             onChange={(e) => validEmail(e)}
+            onBlur={(e) => validEmail(e)}
           />
         </label>
 
@@ -60,6 +63,7 @@ const Contact = () => {
             type="text"
             name="message"
             onChange={(e) => requiredMessage(e)}
+            onBlur={(e) => requiredMessage(e)}
           ></textarea>
         </label>
         <span
