@@ -4,20 +4,26 @@ import validator from "validator";
 const Contact = () => {
   const [Error, setError] = useState("");
 
-  const requiredField = (e) => {
-    let name = e.target.value;
+  const validEmail = (e) => {
     let email = e.target.value;
-    let message = e.target.value;
-
-    if (!name) {
-      setError("This is a required field.");
-    }
 
     if (validator.isEmail(email)) {
       setError("");
     } else {
       setError("Please enter a valid Email");
     }
+  };
+
+  const requiredName = (e) => {
+    let name = e.target.value;
+
+    if (!name) {
+      setError("This is a required field.");
+    }
+  };
+
+  const requiredMessage = (e) => {
+    let message = e.target.value;
 
     if (!message) {
       setError("This is a required field.");
@@ -34,7 +40,7 @@ const Contact = () => {
             className="input-name"
             type="text"
             name="name"
-            onChange={(e) => requiredField(e)}
+            onChange={(e) => requiredName(e)}
           />
         </label>
         <label className="label">
@@ -43,7 +49,7 @@ const Contact = () => {
             className="input-email"
             type="text"
             name="email"
-            onChange={(e) => requiredField(e)}
+            onChange={(e) => validEmail(e)}
           />
         </label>
 
@@ -53,7 +59,7 @@ const Contact = () => {
             className="input-message"
             type="text"
             name="message"
-            onChange={(e) => requiredField(e)}
+            onChange={(e) => requiredMessage(e)}
           ></textarea>
         </label>
         <span
