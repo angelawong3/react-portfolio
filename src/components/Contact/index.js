@@ -1,44 +1,75 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import validator from "validator";
 
-export default class Contact extends Component {
-  render() {
-    return (
-      <section id="section">
-        <div id="title">CONTACT ME</div>
-        {/* TODO: notification for required field */}
-        <form>
-          <label className="label">
-            Name:&nbsp;
-            <input className="input-name" type="text" name="name" />
-          </label>
-          {/* TODO: validate email address */}
-          <label className="label">
-            Email:&nbsp;
-            <input
-              className="input-email"
-              type="text"
-              name="email"
-              placeholder="Please enter a valid email address"
-            />
-          </label>
-          <label className="label">
-            Message:&nbsp;
-            <textarea
-              className="input-message"
-              type="text"
-              name="message"
-            ></textarea>
-          </label>
-          <input className="btn-form" type="submit" value="Submit" />
-        </form>
-        {/* 
-        contact form with fields for a name, an email address, and a message
-        WHEN I move my cursor out of one of the form fields without entering text
-        THEN I receive a notification that this field is required
-        WHEN I enter text into the email address field
-        THEN I receive a notification if I have entered an invalid email address
-        */}
-      </section>
-    );
-  }
-}
+const Contact = () => {
+  const [Error, setError] = useState("");
+
+  const requiredField = (e) => {
+    let name = e.target.value;
+    let email = e.target.value;
+    let message = e.target.value;
+
+    if (!name) {
+      setError("This is a required field.");
+    }
+
+    if (validator.isEmail(email)) {
+      setError("");
+    } else {
+      setError("Please enter a valid Email");
+    }
+
+    if (!message) {
+      setError("This is a required field.");
+    }
+  };
+
+  return (
+    <section id="section">
+      <div id="title">CONTACT ME</div>
+      <form>
+        <label className="label">
+          Name:&nbsp;
+          <input
+            className="input-name"
+            type="text"
+            name="name"
+            onChange={(e) => requiredField(e)}
+          />
+        </label>
+        <label className="label">
+          Email:&nbsp;
+          <input
+            className="input-email"
+            type="text"
+            name="email"
+            onChange={(e) => requiredField(e)}
+          />
+        </label>
+
+        <label className="label">
+          Message:&nbsp;
+          <textarea
+            className="input-message"
+            type="text"
+            name="message"
+            onChange={(e) => requiredField(e)}
+          ></textarea>
+        </label>
+        <span
+          style={{
+            fontWeight: "bold",
+            color: "red",
+            margin: "10px",
+          }}
+        >
+          {Error}
+        </span>
+
+        <input className="btn-form" type="submit" value="Submit" />
+      </form>
+    </section>
+  );
+};
+
+export default Contact;

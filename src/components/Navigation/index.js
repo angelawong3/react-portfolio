@@ -13,7 +13,7 @@ const Navigation = () => (
   <div className="nav-bar">
     <nav>
       <ul>
-        {/* <li>
+        {/* <li className="nav-list">
           <NavLink
             to="/"
             className={({ isActive }) =>
